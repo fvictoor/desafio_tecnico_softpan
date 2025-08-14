@@ -1,0 +1,17 @@
+*** Settings ***
+Resource    ../base.robot
+
+*** Variables ***
+# --- BARRA DE NAVEGAÇÃO (NAVBAR) ---
+${LINK_HOME}               css=[data-testid='home']
+${LINK_LISTA_COMPRAS}      css=[data-testid='lista-de-compras']
+${LINK_CARRINHO}           css=[data-testid='carrinho']
+${BOTAO_LOGOUT}            css=[data-testid='logout']
+
+# --- SEÇÃO PRINCIPAL (JUMBOTRON) E PESQUISA ---
+${TITULO_PAGINA}           xpath=//h1[contains(text(), "Serverest Store")]
+${BOTAO_CARRINHO_ICONE}    css=data-testid=shopping-cart-button
+${CAMPO_PESQUISAR}         css=input[data-testid='pesquisar']
+${BOTAO_PESQUISAR}         css=button[data-testid='botaoPesquisar']
+
+${TITULO_PAGINA_ADM}       xpath=//h1[contains(text(),'Bem Vindo')]
