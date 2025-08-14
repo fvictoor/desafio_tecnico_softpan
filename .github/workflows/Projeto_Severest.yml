@@ -6,11 +6,11 @@ on:
       processes:
         description: "Quantidade de processos para o Pabot"
         required: true
-        default: "4"
+        default: "2"
       titulo_execucao:
         description: "Título do relatório de execução"
         required: true
-        default: "🚀 Relatório de Testes Automatizados - Severest"
+        default: "Relatório de Testes Automatizados - Severest"
       tags_dashboard:
         description: "Tags para o dashboard (separadas por vírgula)"
         required: true
@@ -50,14 +50,14 @@ jobs:
       - name: Executar Testes
         continue-on-error: true
         run: |
-          robot --outputdir ./log   ./tests/
+          pabot --testlevelsplit --processes ${{ github.event.inputs.processes }} --outputdir ./log ./tests/
 
       - name: Executar Retestes
         if: always()
         run: |
           if grep -E -q '<stat .* fail="[1-9][0-9]*"' ./log/output.xml; then
             echo "Falhas encontradas. Rodando retestes..."
-            robot --outputdir ./log/rerun --rerunfailed ./log/output.xml ./tests/
+            pabot --testlevelsplit --processes ${{ github.event.inputs.processes }} --outputdir ./log --rerunfailed ./log/output.xml ./tests/
           else
             echo "Nenhuma falha encontrada. Pulando retestes."
           fi

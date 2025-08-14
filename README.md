@@ -1,10 +1,10 @@
-# 🚀 Desafio Técnico - (QA Sênior) - SoftPlan
+# Desafio Técnico - (QA Sênior) - SoftPlan
 
 Este projeto demonstra uma esteira de automação de testes ponta a ponta, utilizando **Robot Framework** para testar uma aplicação web e api, onde vamos realizar cadastro de usuários, login e validação do carrinhos de campras.
 
 ---
 
-## ✨ Principais Validações
+## Principais Validações
 
 * **Automação de Testes Web:** Scripts robustos com Robot Framework e Browser Library.
 Na automação de testes Web faremos as seguintes validações:
@@ -49,7 +49,7 @@ Na automação de testes via API, faremos as seguintes validações:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Descrição | Documentação |
 | :--- | :--- | :--- |
@@ -66,7 +66,7 @@ Na automação de testes via API, faremos as seguintes validações:
 
 ---
 
-## 🏁 Primeiros Passos
+## Primeiros Passos
 
 Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
 
@@ -109,7 +109,7 @@ rfbrowser init
 
 ---
 
-## ⚙️ Configuração
+## Configuração
 
 Antes de executar os testes, é necessário configurar as variáveis de ambiente para as notificações.
 
@@ -144,11 +144,11 @@ SMTP_PORTA="587"
 EMAIL_DESTINATARIOS="destinatario1@dominio.com,destinatario2@dominio.com"
 ```
 
-> ⚠️ **Importante:** Para contas do Gmail, é necessário gerar uma **[Senha de App](https://support.google.com/accounts/answer/185833?hl=pt)** para usar no campo `EMAIL_SENHA`.
+> **Importante:** Para contas do Gmail, é necessário gerar uma **[Senha de App](https://support.google.com/accounts/answer/185833?hl=pt)** para usar no campo `EMAIL_SENHA`.
 
 ---
 
-## ▶️ Executando a Suite de Testes
+## Executando a Suite de Testes
 
 O fluxo de execução foi projetado para ser simples e eficiente.
 
