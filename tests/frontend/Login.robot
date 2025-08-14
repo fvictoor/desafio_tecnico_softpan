@@ -29,5 +29,6 @@ LOGIN - Validar mensagem de erro ao tentar realizar login com usuário sem email
     USUARIO=${EMPTY}           SENHA=${EMPTY}       TIPO_USER=Alert    MENSAGEM=Email é obrigatório        SUCESS=false
     USUARIO=${EMPTY}           SENHA=${EMPTY}       TIPO_USER=Alert    MENSAGEM=Password é obrigatório     SUCESS=false
     USUARIO=${EMPTY}           SENHA=teste1234      TIPO_USER=Alert    MENSAGEM=Email é obrigatório        SUCESS=false
+    USUARIO=teste@teste.com    SENHA=${EMPTY}       TIPO_USER=Alert    MENSAGEM=Password é obrigatório     SUCESS=false
     USUARIO=teste.com          SENHA=${EMPTY}       TIPO_USER=Alert    SUCESS=false                        ALERT=Please include an '@' in the email address. 'teste.com' is missing an '@'.
     [Teardown]    Take Screenshot    EMBED
